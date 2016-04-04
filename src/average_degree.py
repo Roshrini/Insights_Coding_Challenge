@@ -21,7 +21,7 @@ class Graph(object):
                     self._graph[node1].add(node2)
                     self._graph[node2].add(node1)
 
-#convert timestamp of tweet to epoch time   Fri Dec 07 23:24:29 +0000 2012
+#convert timestamp of tweet to epoch time
 def get_timestamp(parsed_json):
     if 'created_at' in parsed_json:
         created_at = parsed_json['created_at']
